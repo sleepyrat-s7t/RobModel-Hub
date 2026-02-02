@@ -54,6 +54,8 @@ function filterCategory(cat) {
 const music = document.getElementById("bgMusic");
 const btn = document.getElementById("musicBtn");
 btn.onclick = () => {
-  music.muted = false;
-  music.play();
+  music.volume = 0.5;
+  music.play().catch(err => {
+    console.log("Music blocked:", err);
+  });
 };
