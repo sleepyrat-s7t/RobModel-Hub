@@ -53,9 +53,10 @@ function filterCategory(cat) {
 /* Music */
 const music = document.getElementById("bgMusic");
 const btn = document.getElementById("musicBtn");
+
 btn.onclick = () => {
-  music.volume = 0.5;
-  music.play().catch(err => {
-    console.log("Music blocked:", err);
-  });
+  music.muted = false;
+  music.volume = 0.4;
+  music.play();
+  btn.innerText = "🎵 Music Playing";
 };
