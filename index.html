@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RobModel Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🔥 RobModel Hub</h1>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Search Roblox models..."
+  />
+
+  <div class="filters">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('free')">Free</button>
+    <button onclick="filterCategory('premium')">Premium</button>
+  </div>
+</header>
+
+<main id="models"></main>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🔊 Play Music</button>
+
+<script src="script.js"></script>
+</body>
+</html>
